@@ -5,26 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style type='text/css'>
+        .theme{
+            background: #cbb09c !important;
+        }
+        .theme-text{
+            color: #cbb09c !important;
+        }
+        #multiply, #divide, #clear{
+            font-size: larger;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
+
+    <div class="container">
     
-<h1>Simple Calculator</h1>
+<h1 class='theme-text'>Simple Calculator</h1>
 
 
 <!-- output -->
-<div type="text" id="output"></div>
+
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card">
+        <div class="card-content">
+          <h1 id="output">0</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 <!-- inputs -->
 <input type="text" id="input1" placeholder="Value 1">
 <input type="text" id="input2" placeholder="Value 2">
 
 <!-- buttons -->
-<button>Add</button>
-<button>Subtract</button>
-<button>Multiply</button>
-<button>Divide</button>
-<button>Clear</button>
+<button onclick="add()" class="btn-floating blue"><i class="material-icons">add</i></button>
+<button onclick="subtract()" class="btn-floating red"><i class="material-icons">remove</i></button>
+<button onclick="multiply()" class="btn-floating green" id="multiply">X</button>
+<button onclick="divide()" class="btn-floating yellow" id="divide">/</button>
+<button onclick="clearInputs()" id="clear" class="btn-floating white black-text">C</button>
+
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
