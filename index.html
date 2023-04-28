@@ -9,9 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style type='text/css'>
-        .theme{
-            background: #cbb09c !important;
-        }
         .theme-text{
             color: #cbb09c !important;
         }
@@ -26,7 +23,7 @@
 
     <div class="container">
     
-<h1 class='theme-text'>Simple Calculator</h1>
+<h3 class='theme-text'>Simple Calculator</h3>
 
 
 <!-- output -->
@@ -35,7 +32,7 @@
     <div class="col s12 m6 offset-m3">
       <div class="card">
         <div class="card-content">
-          <h1 id="output">0</h1>
+          <h3 id="output">0</h3>
         </div>
       </div>
     </div>
@@ -43,8 +40,8 @@
   
 
 <!-- inputs -->
-<input type="text" id="input1" placeholder="Value 1">
-<input type="text" id="input2" placeholder="Value 2">
+<input type="text" id="input1" placeholder="Value 1" class="input">
+<input type="text" id="input2" placeholder="Value 2" class="input">
 
 <!-- buttons -->
 <button onclick="add()" class="btn-floating blue"><i class="material-icons">add</i></button>
@@ -52,6 +49,7 @@
 <button onclick="multiply()" class="btn-floating green" id="multiply">X</button>
 <button onclick="divide()" class="btn-floating yellow" id="divide">/</button>
 <button onclick="clearInputs()" id="clear" class="btn-floating white black-text">C</button>
+
 
 </div>
 
