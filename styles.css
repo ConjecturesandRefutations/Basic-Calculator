@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Consolas, Helvetica;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: rgb(240, 238, 238);
+    box-shadow: 10px 10px 10px pink;
+    width: 500px;
+ }
+
+ .inputs{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+
+h3{
+    font-size: 2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+     width: 400px;
+    }
+    .inputs{
+        gap:20px;
+    }
+  } 
+
+  @media (max-width: 450px) {
+    .container {
+     width: 300px;
+    }
+    .inputs{
+        gap:10px;   
+    }
+    input{
+        max-width: 100px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .buttons{
+        gap:5px
+    }
+  } 
+
+  @media (max-width: 350px) {
+    .container {
+     width: 250px;
+    }
+  } 
